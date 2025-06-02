@@ -51,6 +51,7 @@ body{
       font-weight: 700;
       font-size: 14px;
       color: #fff;
+      background: #191919;
       padding: 10px 70px 11px;
       border: 2px solid #7F5AF0;
       border-radius: 100px;
@@ -63,6 +64,51 @@ body{
 
       &:hover{
         opacity: 1;
+      }
+    }
+  }
+
+  .header__bottom{
+    border: 2px solid #404040;
+    border-radius: 20px;
+    background: #191919;
+    padding: 12px 54px;
+
+    .header__list{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+
+      .header__item-link{
+        font-family: "Manrope";
+        font-weight: 700;
+        font-size: 17px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 6px 22px;
+        background: transparent;
+        border-radius: 100px;
+        transition: background-color .2s;
+
+        &:hover{
+          background-color: #404040;
+        }
+
+
+        &.green{
+          padding: 6px 22px;
+          background: #2cb67d;
+          border-radius: 100px;
+          opacity: .8;
+          transition: opacity .2s;
+
+          &:hover{
+            opacity: 1;
+          }
+        }
       }
     }
   }
