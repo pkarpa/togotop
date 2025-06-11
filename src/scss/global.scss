@@ -19,6 +19,23 @@ button{
 
 body{
   background-color: #141414;
+  position: relative;
+  font-family: "Circe";
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("/src/assets/img/hero/bg-element.png") no-repeat;
+  }
+}
+
+img{
+   height: auto;
+   max-width: 100%;
 }
 
 .container{
@@ -28,89 +45,255 @@ body{
   padding: 0 10px;
 }
 
-.header__container{
-  display: flex;
-  flex-direction: column;
+//header styles
+.header{
+  margin-bottom: 50px;
 
-  .header__top{
+  .header__container{
     display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 30px 0;
+    flex-direction: column;
 
-    .header__text{
-      font-family: "Manrope";
-      font-weight: 700;
-      font-size: 13px;
-      color: #fff;
-      margin-right: auto;
-    }
-
-    .btn-border{
-      font-family: "Manrope";
-      font-weight: 700;
-      font-size: 14px;
-      color: #fff;
-      background: #191919;
-      padding: 10px 70px 11px;
-      border: 2px solid #7F5AF0;
-      border-radius: 100px;
-      opacity: .8;
-      transition: opacity .2s;
-
-      &.green{
-        border-color: #2CB67D;
-      }
-
-      &:hover{
-        opacity: 1;
-      }
-    }
-  }
-
-  .header__bottom{
-    border: 2px solid #404040;
-    border-radius: 20px;
-    background: #191919;
-    padding: 12px 54px;
-
-    .header__list{
+    .header__top{
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 30px;
+      padding: 30px 0;
 
-      .header__item-link{
+      .header__text{
         font-family: "Manrope";
         font-weight: 700;
-        font-size: 17px;
+        font-size: 13px;
         color: #fff;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 6px 22px;
-        background: transparent;
+        margin-right: auto;
+      }
+
+      .btn-border{
+        font-family: "Manrope";
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        background: #191919;
+        padding: 10px 70px 11px;
+        border: 2px solid #7F5AF0;
         border-radius: 100px;
-        transition: background-color .2s;
-
-        &:hover{
-          background-color: #404040;
-        }
-
+        opacity: .8;
+        transition: opacity .2s;
 
         &.green{
+          border-color: #2CB67D;
+        }
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+
+    .header__bottom{
+      border: 2px solid #404040;
+      border-radius: 20px;
+      background: #191919;
+      padding: 12px 54px;
+
+      .header__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        .header__item-link{
+          font-family: "Manrope";
+          font-weight: 700;
+          font-size: 17px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 16px;
           padding: 6px 22px;
-          background: #2cb67d;
+          background: transparent;
           border-radius: 100px;
-          opacity: .8;
-          transition: opacity .2s;
+          transition: background-color .2s;
 
           &:hover{
-            opacity: 1;
+            background-color: #404040;
+          }
+
+
+          &.green{
+            padding: 6px 22px;
+            background: #2cb67d;
+            border-radius: 100px;
+            opacity: .8;
+            transition: opacity .2s;
+
+            &:hover{
+              opacity: 1;
+            }
           }
         }
       }
     }
+  }
+}
+
+
+
+//hero styles
+
+.hero{
+
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("/src/assets/img/hero/bg.png") center no-repeat;
+    z-index: -1;
+  }
+
+  &__top{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__content{
+    max-width: 800px;
+  }
+
+  &__title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 139%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin-bottom: 50px;
+
+    .violet{
+      color: #7f5af0;
+    }
+
+    .green{
+      color: #2cb67d;
+    }
+  }
+
+  &__sub-title{
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    color: #fff;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  .btn-violet{
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
+    background: #7f5af0; 
+    border-radius: 100px;
+    padding: 22px 40px;
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    color: #fff;
+    opacity: 1;
+    transition: opacity .2s;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+
+  &__image{
+    transform: translate(70px, -30px);
+  }
+
+  &__bottom{
+    border: 1px solid #404040;
+    border-radius: 20px;
+    padding: 10px;
+
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      border-radius: 20px;
+      background: #191919;
+      padding: 10px 27px;
+    }
+
+    &-block{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      gap: 13px;
+    }
+  }
+
+  &__block-numbers{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &.green{
+      color: #2CB67D;
+    }
+
+    &.violet{
+      color: #7F5AF0;
+    }
+  }
+
+  &__block-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background: #262626;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    width: 30px;
+    height: 48px;
+  }
+
+  &__block-num-last{
+    width: 30px;
+    height: 48px;
+    background: #262626;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+
+    &::after{
+      content: "0123456789";
+      position: absolute;
+      color: inherit;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      top: -175px
+    }
+  }
+
+  &__block-text{
+    font-family: "Circe", sans-serif;;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 160%;
+    color: #fff;
   }
 }
 
