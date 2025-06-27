@@ -445,3 +445,66 @@ img{
 .problems__content-text:last-child{
   margin-bottom: 0;
 }
+
+//simple
+.simple{
+  margin-bottom: 170px;
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  &__actions{
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    max-width: 535px;
+    
+    &-item{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px
+    }
+
+    &-bold{
+      font-weight: 600;
+    }
+  }
+
+  &__number{
+    padding: 20px 30px;
+    border-radius: 100%;
+    border-width: 4px;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__actions-title{
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  &__actions-description{
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &__media{
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 56px 42px;
+  }
+}
