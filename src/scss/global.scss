@@ -508,3 +508,28 @@ img{
     padding: 56px 42px;
   }
 }
+
+//partners
+.partners{
+  margin-bottom: 170px;
+  position: relative;
+  overflow: visible;
+
+  &::after{
+    position: absolute;
+    content: '';
+    width: 1900px;
+    height: 1735px;
+    top: -696px;
+    left: -650px;
+    background: url('/src/assets/img/partners/partnersLight.png') center no-repeat;
+    z-index: -1;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+  }
+}
