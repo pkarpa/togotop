@@ -652,7 +652,7 @@ img{
 
   &__content{
     display: flex;
-    gap: 300px;
+    gap: 30px;
     justify-content: space-between;
   }
 
@@ -670,11 +670,9 @@ img{
     margin-bottom: 42px;
   }
 
-  
-
   &__media{
     position: relative;
-    right: -5.5%;
+    right: -9%;
     margin-right: -50px;
   }
 }
