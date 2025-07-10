@@ -21,6 +21,7 @@ body{
   background-color: #141414;
   position: relative;
   font-family: "Circe";
+  overflow-x: hidden;
 
   &::after{
     content: "";
@@ -674,5 +675,77 @@ img{
     position: relative;
     right: -9%;
     margin-right: -50px;
+  }
+}
+
+//promotion
+.promotion{
+  position: relative;
+  margin-bottom: 70px;
+
+  &::before{
+    position: absolute;
+    content: "";
+    top: -50%;
+    right: 0;
+    width: 500px;
+    height: 200px;
+    background-image: url("/src/assets/img/promotion/back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::after{
+    position: absolute;
+    content: "";
+    bottom: -50%;
+    right: -5%;
+    width: 500px;
+    height: 200px;
+    background-image: url("/src/assets/img/promotion/back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__container{
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: "";
+      bottom: -50%;
+      left: 50%;
+      width: 500px;
+      height: 200px;
+      background-image: url("/src/assets/img/promotion/back.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title{
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    margin-bottom: 56px;
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 147%;
+    color: #fff;
+  }
+
+  &__btn{
+    background-color: #2cb67d;
   }
 }
