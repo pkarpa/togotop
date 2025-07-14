@@ -705,6 +705,7 @@ img{
     background-image: url("/src/assets/img/promotion/back.svg");
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
   }
 
   &__container{
@@ -747,5 +748,116 @@ img{
 
   &__btn{
     background-color: #2cb67d;
+  }
+}
+
+// footer
+.footer{
+  &__top{
+    border-radius: 20px;
+    background: #191919;
+    padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__media{
+    margin-bottom: 72px;
+  }
+
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 42px;
+    border-bottom: 1px solid #3C3C3C;
+    padding-bottom: 25px;
+    margin-bottom: 32px;
+
+    &-text{
+      font-family: "Circe", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 147%;
+      color: #949494;
+    }
+
+    &-link{
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #fff;
+    }
+
+    &-text-span{
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  &__blocks{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 34px;
+    justify-content: space-between;
+    max-width: 1180px;
+  }
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+
+    &-title{
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    &-link{
+      @extend .footer__block-title;
+    }
+
+    &:last-child{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 100px;
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__link{
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #d0cfcf;
+  }
+
+  &__soc{
+    display: flex;
+    gap: 11px;
+    
+    &-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background-color: #7F5AF0;
+      border-radius: 50px;
+    }
   }
 }
