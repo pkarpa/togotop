@@ -759,6 +759,7 @@ img{
     padding: 50px 35px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   &__media{
@@ -849,7 +850,7 @@ img{
   &__soc{
     display: flex;
     gap: 11px;
-    
+
     &-link{
       display: flex;
       align-items: center;
@@ -858,6 +859,21 @@ img{
       height: 52px;
       background-color: #7F5AF0;
       border-radius: 50px;
+    }
+  }
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &-text{
+      font-family: "Arial", sans-serif;;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      color: #fff;
     }
   }
 }
