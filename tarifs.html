@@ -57,9 +57,9 @@
                 <p class="tarifs__text">Виберіть тарифний план та запустіть просування товарів вже сьогодні</p>
                 <div class="tarifs__content">
                     <div class="tarifs__buttons">
-                        <button class="tarif__btn btn-border">Комбо тарифи</button>
-                        <button class="tarif__btn btn-border">Викупи</button>
-                        <button class="tarif__btn btn-border">Відгуки</button>
+                        <button class="tarifs__btn btn-border active">Комбо тарифи</button>
+                        <button class="tarifs__btn btn-border">Викупи</button>
+                        <button class="tarifs__btn btn-border">Відгуки</button>
                     </div>
                     <div class="tarifs__blocks">
                         <div class="tarifs__block">
@@ -75,7 +75,7 @@
                             <button class="tarifs__block-btn btn-violet">Підключити</button>
                             <div class="tarifs__block-text">
                                 <h4 class="tarifs__text-title">Що я отримаю?</h4>
-                                <ul class="tarifs__block-list">
+                                <ul class="tarifs__block-list free">
                                     <li class="tarifs__block-item">Аналітика позицій товарів на Wildberries</li>
                                     <li class="tarifs__block-item">Показники кількості запитів щодо товарів</li>
                                     <li class="tarifs__block-item">Вартість рекламних ставок конкурентів</li>
@@ -302,77 +302,79 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="tarifs__block">
-                            <h3 class="tarifs__block-title">Комбо Преміум</h3>
-                            <div class="tarifs__data">
-                                <p class="tarifs__name">ціна:</p>
-                                <p class="tarifs__value">25 000₴</p>
-                            </div>
-                            <div class="tarifs__data">
-                                <p class="tarifs__name">срок:</p>
-                                <p class="tarifs__value">2 місяць</p>
-                            </div>
-                            <button class="tarifs__block-btn btn-violet">Підключити</button>
-                            <div class="tarifs__block-text">
-                                <h4 class="tarifs__text-title">Що я отримаю?</h4>
-                                <ul class="tarifs__block-list">
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50₴</span>
-                                        вартість 1 викупу
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">500</span>
-                                        викупів
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50</span>
-                                        лайки на товар
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50</span>
-                                        лайки на бренд
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50</span>
-                                        питання
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50</span>
-                                        додавання до кошика
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50</span>
-                                        лист очікування
-                                    </li>
-                                    <li class="tarifs__block-item">
-                                        <div class="tarifs__item-media">
-                                            <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
-                                        </div>
-                                        <span class="tarifs__item-span">50</span>
-                                        лайки на відгуки
-                                    </li>
-                                </ul>
+                        <div class="tarifs__block premium">
+                            <div class="tarifs__wrapper">
+                                <h3 class="tarifs__block-title">Комбо Преміум</h3>
+                                <div class="tarifs__data">
+                                    <p class="tarifs__name">ціна:</p>
+                                    <p class="tarifs__value">25 000₴</p>
+                                </div>
+                                <div class="tarifs__data">
+                                    <p class="tarifs__name">срок:</p>
+                                    <p class="tarifs__value">2 місяць</p>
+                                </div>
+                                <button class="tarifs__block-btn btn-violet">Підключити</button>
+                                <div class="tarifs__block-text">
+                                    <h4 class="tarifs__text-title">Що я отримаю?</h4>
+                                    <ul class="tarifs__block-list">
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50₴</span>
+                                            вартість 1 викупу
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">500</span>
+                                            викупів
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50</span>
+                                            лайки на товар
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50</span>
+                                            лайки на бренд
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50</span>
+                                            питання
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50</span>
+                                            додавання до кошика
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50</span>
+                                            лист очікування
+                                        </li>
+                                        <li class="tarifs__block-item">
+                                            <div class="tarifs__item-media">
+                                                <img class="tarifs__item-icon" src="./src/assets/img/tarifs/icon.svg" alt="tarif icon">
+                                            </div>
+                                            <span class="tarifs__item-span">50</span>
+                                            лайки на відгуки
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="tarifs__block">
