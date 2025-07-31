@@ -941,6 +941,38 @@ img{
   &__blocks{
     display: flex;
     margin-bottom: 170px;
+    
+
+    &.redemption,
+    &.feedback{
+      .tarifs__block{
+        &:not(:first-child){
+          max-height: 445px;
+          height: 100%;
+
+          .tarifs__block-list li:nth-child(n+3){
+            display: none;
+          }
+        }        
+ 
+        &.premium{
+          position: relative;
+          .tarifs__block-wrapper{
+            transform: scaleY(0.91);
+          }
+
+          &::after{
+            position: absolute;
+            content: "";
+            width: 206px;
+            height: 206px;
+            top: -62px;
+            right: -78px;
+            background: url("/src/assets/img/tarifs/icon-top.svg") center no-repeat;
+          }
+        }
+      }
+    }
   }
 
   &__block{
@@ -948,10 +980,11 @@ img{
     width: 100%;
     border-radius: 8px;
     padding: 30px 8px 37px;
-
+    overflow: hidden;
+    
     &.premium{
       transform: scaleY(1.1);
-      .tarifs__wrapper{
+      .tarifs__block-wrapper{
         transform: scaleY(0.91);
       }
     }

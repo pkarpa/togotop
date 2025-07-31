@@ -57,11 +57,11 @@
                 <p class="tarifs__text">Виберіть тарифний план та запустіть просування товарів вже сьогодні</p>
                 <div class="tarifs__content">
                     <div class="tarifs__buttons">
-                        <button class="tarifs__btn btn-border active">Комбо тарифи</button>
-                        <button class="tarifs__btn btn-border">Викупи</button>
-                        <button class="tarifs__btn btn-border">Відгуки</button>
+                        <button data-tarifs-btn="1" class="tarifs__btn btn-border active">Комбо тарифи</button>
+                        <button data-tarifs-btn="2" class="tarifs__btn btn-border">Викупи</button>
+                        <button data-tarifs-btn="3" class="tarifs__btn btn-border">Відгуки</button>
                     </div>
-                    <div class="tarifs__blocks">
+                    <div data-tarifs-blocks class="tarifs__blocks">
                         <div class="tarifs__block">
                             <h3 class="tarifs__block-title">Безкоштовний</h3>
                             <div class="tarifs__data">
@@ -303,7 +303,7 @@
                             </div>
                         </div>
                         <div class="tarifs__block premium">
-                            <div class="tarifs__wrapper">
+                            <div class="tarifs__block-wrapper">
                                 <h3 class="tarifs__block-title">Комбо Преміум</h3>
                                 <div class="tarifs__data">
                                     <p class="tarifs__name">ціна:</p>
