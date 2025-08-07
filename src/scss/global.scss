@@ -704,6 +704,7 @@ img{
     background-image: url("/src/assets/img/promotion/back.svg");
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
   }
 
   &::after{
