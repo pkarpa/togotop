@@ -1479,3 +1479,112 @@ img{
     justify-content: center;
   }
 }
+
+//select tarif
+.select-tarif{
+  margin-bottom: 145px;
+
+  &__text{
+    max-width: 930px;
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 167%;
+    color: #fff;
+    margin-bottom: 69px;
+  }
+
+  &__blocks{
+    background: #191919;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+  }
+
+  &__block-left{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    border-right: 1px solid #363636;
+    padding-right: 43px;
+  }
+
+  &__block{
+    
+    &-title{
+      font-family: "Circe", sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 147%;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+
+    &.bottom{
+      .select-tarif__btn{
+        padding-top: 13px;
+        padding-bottom: 12px;
+        font-family:  "Circe", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #fff;
+        border: none;
+      }
+
+      .select-tarif__btn:nth-child(1){
+        background-color: #424242;
+      }
+      .select-tarif__btn:nth-child(2){
+        background-color: #3D4C4F;
+      }
+      .select-tarif__btn:nth-child(3){
+        background-color: #3D5D66;
+      }
+      .select-tarif__btn:nth-child(4){
+        background-color: #AE673D;
+      }
+      .select-tarif__btn:nth-child(5){
+        background-color: #5490AF;
+      }
+      .select-tarif__btn:nth-child(6){
+        background-color: #8E6EA1;
+      }
+      .select-tarif__btn:nth-child(7){
+        background-color: #5AB381;
+      }
+    }
+  }
+
+  &__btn{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    display: block;
+    font-family: "Circe", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    color: #fff;
+
+    &:hover{
+      background-color: #7F5AF0;
+    }
+  }
+
+  &__block-right{
+    flex: 0 1 50%;
+  }
+}
